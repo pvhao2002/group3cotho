@@ -330,26 +330,14 @@ p {
     align-items: flex-start;
     justify-content: left;
     flex-direction: column;
-    padding: 30px;
+    padding: 0px;
     border-radius: 10px;
-    background-size: cover;
-    margin: 10px 5%;
+    margin: 0;
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
 
-#services .service-item:nth-child(1) {
-    background-image: url(./img/tuyet.jpg);
-}
-
-#services .service-item:nth-child(2) {
-    background-image: url(./img/hao.jpg);
-}
-
-#services .service-item:nth-child(3) {
-    background-image: url(./img/tuan.png);
-}
 
 
 #services .service-item::after {
@@ -359,22 +347,32 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: white;
     opacity: .5;
     z-index: -1;
 }
 
+
 #services .service-item h2 {
     font-size: 2rem;
-    color: whitesmoke;
+    color: black;
     margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
 }
 
+#services .service-item img {
+    border-radius: 30px;
+    opacity: .99;
+    image-rendering: auto;
+}
+
+/* 
 #services .service-item p {
     color: whitesmoke;
     text-align: left;
-}
+} */
 
 /* End Services Section */
 
